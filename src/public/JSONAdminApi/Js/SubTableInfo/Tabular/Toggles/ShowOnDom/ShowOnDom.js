@@ -5,7 +5,6 @@ let jFCreateFoldersToDom = async () => {
     let jVarLocalFetchUrl = `/${jVarLocalRoute}/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/SubTableInfo/Toggles`;
     let jVarLocalFromFetch = await fetch(jVarLocalFetchUrl);
     let dataFromApi = await jVarLocalFromFetch.json();
-    console.log("dataFromApi--",dataFromApi);
 
     if (dataFromApi !== null) {
         StartFuncApplyClasses({ inDataFromApi: dataFromApi });
