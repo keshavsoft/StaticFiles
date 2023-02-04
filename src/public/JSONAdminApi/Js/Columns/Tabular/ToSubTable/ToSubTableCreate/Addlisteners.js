@@ -12,7 +12,8 @@ let jFLocalClickFunc = async (event) => {
     let jVarLocalfilename = jVarLocalCurrentTarget.dataset.filename;
     let jVarLocalitemname = jVarLocalCurrentTarget.dataset.itemname;
     let jVarLocalscreenname = jVarLocalCurrentTarget.dataset.screenname;
-    let jVarLocalInColumnName = jVarLocalCurrentTarget.dataset.columnName;
+    let jVarLocalInColumnName = jVarLocalCurrentTarget.dataset.columnname;
+    console.log("jVarLocalInColumnName--",jVarLocalInColumnName);
 
     let jFetchUrl = "/JSONAdminApi/AdminApi/AsTree/Json/UserFolders/ScreensFromDisplayJson/TableColumns/ToSubtable/ToSubtableCreate";
 
@@ -41,7 +42,7 @@ let jFLocalClickFunc = async (event) => {
             jVarLocalNewLocation += `&inItemName=${jVarLocalitemname}`
             jVarLocalNewLocation += `&inScreenName=${jVarLocalscreenname}`
             jVarLocalNewLocation += `&inColumnName=${jVarLocalInColumnName}`;
-            window.location = jVarLocalNewLocation;
+            // window.location = jVarLocalNewLocation;
 
             break;
 
