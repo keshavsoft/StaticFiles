@@ -12,8 +12,6 @@ let jFLocalClickFunc = async (event) => {
     let jVarLocalfilename = jVarLocalCurrentTarget.dataset.filename;
     let jVarLocalitemname = jVarLocalCurrentTarget.dataset.itemname;
     let jVarLocalscreenname = jVarLocalCurrentTarget.dataset.screenname;
-    let jVarLocalsubtablecolumnkey = jVarLocalCurrentTarget.dataset.subtablecolumnkey;
-
 
     let jVarLocalColsestTr = jVarLocalCurrentTarget.closest("tr");
     let jVarLocalDataAttribute = jVarLocalColsestTr.querySelector('[name="DataAttribute"]');
@@ -42,7 +40,6 @@ let jFLocalClickFunc = async (event) => {
             FileName: jVarLocalfilename,
             ItemName: jVarLocalitemname,
             ScreenName: jVarLocalscreenname,
-            subtablecolumnkey:jVarLocalsubtablecolumnkey,
             DataAttribute: jVarLocalDataAttributeValue,
             BodyAsJson
         })
